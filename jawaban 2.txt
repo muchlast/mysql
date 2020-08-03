@@ -1,0 +1,21 @@
+CREATE TABLE users (
+    id integer AUTO_INCREMENT,
+    name varchar(255),
+    email varchar(255) UNIQUE,
+    password varchar(255)
+    );
+
+CREATE TABLE items (
+    id integer PRIMARY KEY AUTO_INCREMENT,
+    name varchar(255),
+    price integer,
+    stock integer,
+    description varchar(255),
+    category_id integer,
+    foreign key (category_id) REFERENCES categories(id)
+    );
+
+CREATE TABLE categories (
+    id integer PRIMARY KEY AUTO_INCREMENT,
+    name varchar(255)
+    );

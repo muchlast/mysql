@@ -1,0 +1,14 @@
+insert into users (name, email, password)
+values ("john doe", "john@doe.com", "john123")
+insert into users (name, email, password)
+values ("jane doe", "jane@doe.com", "jenita123")
+
+INSERT INTO `categories`(`id`, `name`) VALUES (1, 'gadget')
+INSERT INTO `categories`(`id`, `name`) VALUES (2, 'cloth')
+INSERT INTO `categories`(`id`, `name`) VALUES (3, 'men')
+INSERT INTO `categories`(`id`, `name`) VALUES (4, 'women')
+INSERT INTO `categories`(`id`, `name`) VALUES (5, 'branded')
+
+INSERT INTO `items`(`id`, `name`, `price`, `stock`, `description`, `category_id`) VALUES ("1", "Sumsang b50",4000000, 100, "hape keren dari merek sumsang", 1)
+INSERT INTO `items`(`id`, `name`, `price`, `stock`, `description`, `category_id`) VALUES ("2", "Uniklooh",  	 500000, 50, " baju keren dari brand ternama", 2)
+INSERT INTO `items`(`id`, `name`, `price`, `stock`, `description`, `category_id`) VALUES ("3", "IMHO Watch",  	2000000, 10, "jam tangan anak yang jujur banget", 1)

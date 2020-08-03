@@ -1,0 +1,15 @@
+A.
+
+SELECT u.id, u.name FROM `users` AS u
+
+B.
+
+1.   SELECT * FROM `items` WHERE price>1000000
+2.   SELECT * FROM `items` WHERE name LIKE '%sang%' 
+
+C.
+
+SELECT items.id, items.name, items.price, items.stock, items.description, items.category_id, categories.name 
+FROM items 
+INNER JOIN categories 
+ON items.category_id = categories.id  
